@@ -53,7 +53,6 @@ export default function Home() {
         </button>
 
         <div className="border-2 border-red-50 w-[250px] h-[250px] flex justify-center items-center">
-          {error== null ? <p className="animate-pulse text-black">click on camera button to see Your video </p> : null}
                 {error && <div>{error}</div>}
                 {!videoRef.current == null ? <video ref={videoRef} width="640" height="480" autoPlay style={{ display: videoRef.current ? 'block' : 'none' }}></video> : "" }
                 
